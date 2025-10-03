@@ -59,47 +59,69 @@ It combines **offline modeling (Jupyter Notebook, ML models)** with an **interac
 git clone <your-repo-url>
 cd <your-repo-folder>
 
-### 2. Create Virtual Environment
-```bash
+2. Create and activate a virtual environment
+# Create venv
 python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
 
-### 3.Install Dependencies
-```bash
+# macOS / Linux
+source venv/bin/activate
+
+# Windows (PowerShell)
+venv\Scripts\Activate.ps1
+
+# Windows (CMD)
+venv\Scripts\activate.bat
+
+3. Install dependencies
 pip install -r requirements.txt
 
-### 4.Run App
-```bash
+4. Run the Streamlit app
 streamlit run streamlit_app_1.py
+
 
 The app will open in your browser at: http://localhost:8501
 
-## 🖼 Dashboard Features
-- 🌐 Real-time **USGS earthquake feeds** (24hr, 7-day, 30-day)  
-- 🗺 Interactive **global earthquake maps** (PyDeck / Folium)  
-- 📊 **Magnitude prediction** with trained Random Forest model  
-- ⚡ **Aftershock classification** with probability outputs  
-- 🚨 **Alert system** (High / Moderate / Low risk)  
-- 📑 Export results to CSV  
+🖼 Dashboard Features
 
----
+🌐 Real-time USGS earthquake feeds (24hr, 7-day, 30-day)
 
-## 📘 Documentation
-📄 Full project report: *[Project Report (PDF)](docs/Project_Report.pdf)*  
+🗺 Interactive global earthquake maps (PyDeck / Folium)
 
----
+📊 Magnitude prediction with trained Random Forest model
 
-## 🔮 Future Work
-- 📡 Add seismic waveform features (P-wave, S-wave)  
-- 🤖 Explore deep learning models (LSTMs, Transformers)  
-- 📈 Implement probabilistic forecasting for uncertainty estimation  
-- ☁️ Deploy dashboard to **Streamlit Cloud / AWS / GCP** for continuous monitoring  
-- 📲 Integrate external alerts (SMS, Email, Webhooks)  
+⚡ Aftershock classification with probability outputs
 
----
+🚨 Alert system (High / Moderate / Low risk)
 
-## 📚 References
+📑 Export results to CSV
+
+📘 Documentation
+
+📄 Full project report: Project Report (PDF)
+
+🔮 Future Work
+
+📡 Add seismic waveform features (P-wave, S-wave)
+
+🤖 Explore deep learning models (LSTMs, Transformers)
+
+📈 Implement probabilistic forecasting for uncertainty estimation
+
+☁️ Deploy dashboard to Streamlit Cloud / AWS / GCP for continuous monitoring
+
+📲 Integrate external alerts (SMS, Email, Webhooks)
+
+📚 References
+
+Allen, R. M., & Melgar, D. (2019). Earthquake early warning: Advances, scientific challenges, and societal needs. Annual Review of Earth and Planetary Sciences, 47, 361–388.
+
+Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5–32.
+
+Ester, M., Kriegel, H. P., Sander, J., & Xu, X. (1996). A density-based algorithm for discovering clusters in large spatial databases with noise. KDD.
+
+USGS Earthquake Hazards Program. (2023). Earthquake Catalog. https://earthquake.usgs.gov/
+
+Streamlit Inc. (2023). Streamlit: The fastest way to build and share data apps. https://streamlit.io
 - Allen, R. M., & Melgar, D. (2019). *Earthquake early warning: Advances, scientific challenges, and societal needs*. **Annual Review of Earth and Planetary Sciences, 47**, 361–388.  
 - Breiman, L. (2001). *Random forests*. **Machine Learning, 45(1)**, 5–32.  
 - Ester, M., Kriegel, H. P., Sander, J., & Xu, X. (1996). *A density-based algorithm for discovering clusters in large spatial databases with noise*. **KDD**.  
