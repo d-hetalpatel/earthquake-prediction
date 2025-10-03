@@ -61,7 +61,7 @@ cd <your-repo-folder>
 
 ---
 
-**### 2. Create and activate a virtual environment**
+### 2. Create and activate a virtual environment
 # Create venv
 python -m venv venv
 
