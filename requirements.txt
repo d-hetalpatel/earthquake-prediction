@@ -1,7 +1,14 @@
 streamlit
 pandas
 numpy
-scikit-learn
+matplotlib
+seaborn
 plotly
 pydeck
-requests
+geopandas
+shapely
+rasterio
+rasterstats
+statsmodels
+scikit-learn
+gdown
