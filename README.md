@@ -13,11 +13,12 @@ The project integrates machine learning, geospatial data, and interactive visual
 - **Visualizations**: Includes time-series plots, heatmaps, and geospatial maps for better understanding seismic patterns.
 
 ## Repository Structure
-earthquake-prediction/
-│── streamlit_app_eq.py # Streamlit app (main entry point)
-│── PO_64 Project RichterX1.ipynb # Jupyter notebook for experiments
-│── earthquake_models_and_data.pkl # Trained ML model
-│── gem_active_faults_harmonized.shp # Fault line dataset
-│── volcanoes_all_list.csv # Volcanic activity dataset
-│── requirements.txt # Python dependencies
-│── README.md # Documentation
+earthquake-prediction/  
+│── streamlit_app_eq.py # Streamlit app (main entry point)  
+│── PO_64 Project RichterX1.ipynb # Jupyter notebook for experiments  
+│── earthquake_models_and_data.pkl # Trained ML model  
+│── gem_active_faults_harmonized.shp # Fault line dataset  
+│── volcanoes_all_list.csv # Volcanic activity dataset  
+│── requirements.txt # Python dependencies  
+│── README.md # Documentation  
+
