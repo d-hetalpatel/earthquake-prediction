@@ -12,3 +12,4 @@ rasterstats
 statsmodels
 scikit-learn
 gdown
+joblib
