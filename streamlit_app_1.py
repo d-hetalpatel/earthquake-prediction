@@ -26,7 +26,7 @@ time_window = st.sidebar.selectbox("Time Window", ["Last 24 Hours", "Last 7 Days
 send_webhook = st.sidebar.checkbox("Send Webhook Alerts (Optional)", value=False)
 
 # === LOAD TRAINED MODELS ===
-drive_url = "https://drive.google.com/file/d/1kaMuXbIK71zOWu0REDEIVQGC8EL4aLXL"
+drive_url = "https://drive.google.com/uc?id=1kaMuXbIK71zOWu0REDEIVQGC8EL4aLXL"
 pickle_path = r"earthquake_models_and_data.pkl.gz"
 # Download the file if it doesn't exist locally
 if not os.path.exists(pickle_path):
@@ -219,3 +219,4 @@ st.download_button(
     file_name=f"earthquake_predictions_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
     mime="text/csv"
 )
+
