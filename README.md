@@ -63,6 +63,7 @@ cd <your-repo-folder>
 ---
 
 ### 2. Create and activate a virtual environment
+```bash
 # Create venv
 python -m venv venv
 
@@ -74,13 +75,15 @@ venv\Scripts\Activate.ps1
 
 # Windows (CMD)
 venv\Scripts\activate.bat
-
-3. Install dependencies
+```
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
-
-4. Run the Streamlit app
+```
+### 4. Run the Streamlit app
+```bash
 streamlit run streamlit_app_1.py
-
+```
 
 The app will open in your browser at: [http://localhost:8501](http://localhost:8501)
 
