@@ -57,7 +57,8 @@ It combines **offline modeling (Jupyter Notebook, ML models)** with an **interac
 ### 1. Clone Repository
 ```bash
 git clone <your-repo-url>
-cd <your-repo-folder>```
+cd <your-repo-folder>
+```
 
 ---
 
