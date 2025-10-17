@@ -170,6 +170,10 @@ def risk_color(row):
 
 df['color'] = df.apply(risk_color, axis=1)
 
+df['predicted_magnitude_str'] = df['predicted_magnitude'].round(2).astype(str)
+df['aftershock_prob_str'] = df['aftershock_prob'].round(2).astype(str)
+
+
 scatter_layer = pdk.Layer(
     "ScatterplotLayer",
     data=df,
@@ -195,8 +199,8 @@ view_state = pdk.ViewState(
 
 tooltip = {
     "html": "<b>Place:</b> {place} <br/>"
-            "<b>Predicted Mag:</b> {predicted_magnitude:.2f} <br/>"
-            "<b>Aftershock Prob:</b> {aftershock_prob:.2f} <br/>"
+            "<b>Predicted Mag:</b> {predicted_magnitude_str} <br/>"
+            "<b>Aftershock Prob:</b> {aftershock_prob_str} <br/>"
             "<b>Status:</b> {Alert_Status}",
     "style": {"color": "white"}
 }
@@ -223,3 +227,4 @@ st.download_button(
     file_name=f"earthquake_predictions_{datetime.now().strftime('%Y%m%d_%H%M')}.csv",
     mime="text/csv"
 )
+
