@@ -10,6 +10,7 @@ shapely
 rasterio
 rasterstats
 statsmodels
-scikit-learn
+scikit-learn==1.6.1
 gdown
 joblib
+
